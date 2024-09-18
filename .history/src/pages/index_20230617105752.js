@@ -13,8 +13,11 @@ const Home = () => {
   return (
     <div id="homescreen" className="relative">
       <Head>
-        <title>Hey, I&apos;m Helmi Febri Nandani.</title>
-        <meta name="description" content="Helmi Febri Nandani" />
+        <title>Hey, I&apos;m TomIsLoading.</title>
+        <meta
+          name="description"
+          content="This is my page description. Super exciting :)"
+        />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Moon />
