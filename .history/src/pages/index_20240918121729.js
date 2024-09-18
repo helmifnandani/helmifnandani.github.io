@@ -6,6 +6,7 @@ import Moon from "../components/effects/Moon";
 import Left from "../components/left/Left";
 import { useState } from "react";
 import Head from "next/head";
+
 import logo from "/public/logo.png";
 
 const Home = () => {
@@ -16,7 +17,7 @@ const Home = () => {
       <Head>
         <title>Hey, I&apos;m Helmi Febri Nandani.</title>
         <meta name="description" content="Helmi Febri Nandani" />
-        <link rel="icon" href={logo.src} />
+        <link rel="icon" href="/favicon.ico" />
       </Head>
       <Moon />
       <Clouds />

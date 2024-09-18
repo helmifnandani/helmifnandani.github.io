@@ -6,6 +6,7 @@ import Moon from "../components/effects/Moon";
 import Left from "../components/left/Left";
 import { useState } from "react";
 import Head from "next/head";
+
 import logo from "/public/logo.png";
 
 const Home = () => {
