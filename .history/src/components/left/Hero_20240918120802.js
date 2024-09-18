@@ -4,6 +4,7 @@ import { TypeAnimation } from "react-type-animation";
 import github from "/public/github.svg";
 import google from "/public/google.svg";
 import linkedin from "/public/linkedin.svg";
+import resume from "/public/resume.pdf";
 
 export default function Hero({ section }) {
   return (
@@ -54,8 +55,8 @@ export default function Hero({ section }) {
       </div>
       <div className="mb-8">
         <a
-          href={`/resume.pdf`}
-          download="helmifnandani.pdf"
+          href={resume.src}
+          download="HelmiFNandani.pdf"
           target="_blank"
           className="text-brand font-semibold hover:underline"
         >

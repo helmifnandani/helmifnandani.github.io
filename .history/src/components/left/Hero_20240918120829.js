@@ -54,8 +54,8 @@ export default function Hero({ section }) {
       </div>
       <div className="mb-8">
         <a
-          href={`/resume.pdf`}
-          download="helmifnandani.pdf"
+          href={`${process.env.PUBLIC_URL}/resume.pdf`}
+          download="HelmiFNandani.pdf"
           target="_blank"
           className="text-brand font-semibold hover:underline"
         >

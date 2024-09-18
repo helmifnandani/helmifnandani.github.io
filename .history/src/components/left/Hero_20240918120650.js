@@ -1,9 +1,7 @@
 import Link from "next/link";
 import Links from "./Links";
 import { TypeAnimation } from "react-type-animation";
-import github from "/public/github.svg";
-import google from "/public/google.svg";
-import linkedin from "/public/linkedin.svg";
+import waves from "/public/waves.svg";
 
 export default function Hero({ section }) {
   return (
@@ -26,7 +24,7 @@ export default function Hero({ section }) {
             onClick={() => {
               window.open("https://github.com/helmifnandani", "_blank");
             }}
-            src={github.src}
+            src="/github.svg"
           />
         </div>
         <div className="mr-4 transition-opacity hover:opacity-70 cursor-pointer">
@@ -38,7 +36,7 @@ export default function Hero({ section }) {
                 "_blank"
               );
             }}
-            src={linkedin.src}
+            src="/linkedin.svg"
           />
         </div>
         <div className="transition-opacity hover:opacity-70 cursor-pointer">
@@ -47,15 +45,15 @@ export default function Hero({ section }) {
             onClick={() => {
               window.open("mailto:helmifnandani@gmail.com");
             }}
-            src={google.src}
+            src="/google.svg"
             className="transition-opacity hover:opacity-70 cursor-pointer"
           />
         </div>
       </div>
       <div className="mb-8">
         <a
-          href={`/resume.pdf`}
-          download="helmifnandani.pdf"
+          href={`${process.env.PUBLIC_URL}/resume.pdf`}
+          download="HelmiFNandani.pdf"
           target="_blank"
           className="text-brand font-semibold hover:underline"
         >

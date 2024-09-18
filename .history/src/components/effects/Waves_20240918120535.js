@@ -2,6 +2,7 @@ import React from "react";
 import waves from "/public/waves.svg";
 
 export default function Waves() {
+  console.log(waves);
   return (
     <img
       src={waves.src}
