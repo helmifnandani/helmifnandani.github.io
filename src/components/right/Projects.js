@@ -32,7 +32,7 @@ export default function Projects({ setSection }) {
       <h2 className="font-bold text-3xl mb-2">Projects</h2>
 
       <Card>
-        <div className="flex items-center justify-between mb-6">
+        <div className="flex lg:flex-row flex-col items-start lg:items-center justify-between mb-6">
           <h3 className="font-bold text-2xl">Thekoreandaily</h3>
           <div>
             <a
@@ -56,7 +56,7 @@ export default function Projects({ setSection }) {
       </Card>
 
       <Card>
-        <div className="flex items-center justify-between mb-6">
+        <div className="flex lg:flex-row flex-col items-start lg:items-center justify-between mb-6">
           <h3 className="font-bold text-2xl">Forkify</h3>
           <div>
             <a
