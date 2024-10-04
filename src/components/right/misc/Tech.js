@@ -24,6 +24,13 @@ export default function Tech() {
         <li className="font-light leading-7">• C#</li>
         <li className="font-light leading-7">• .Net</li>
       </ul>
+      <p className="font-light leading-7 mb-2">Tools that I familiar with:</p>
+      <ul className="grid grid-cols-2 gap-x-2">
+        <li className="font-light leading-7">• Git</li>
+        <li className="font-light leading-7">• Figma</li>
+        <li className="font-light leading-7">• Notion</li>
+        <li className="font-light leading-7">• Azure</li>
+      </ul>
     </Card>
   );
 }

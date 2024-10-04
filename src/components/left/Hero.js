@@ -63,15 +63,16 @@ export default function Hero({ section }) {
         </a>
       </div>
       <p className="font-light leading-7">
-        I&apos;m a Front End Developer based in Jakarta, Indonesia. A
-        well-organized and committed individual with a couple of years of
-        experience in implementing responsive web design. Passionate about
-        continuous learning, I enjoy expanding my knowledge of new technology
-        stacks in my free time. I am eager to contribute to a dynamic
-        development team within an ambitious company and forge a long-term
-        career in the IT industry. Outside of work, I’m an avid video game
-        enthusiast, which further fuels my creativity and problem-solving
-        skills.
+        Front End Developer based in Jakarta, Indonesia who is dedicated web
+        developer with proven experience in crafting responsive and user-centric
+        designs. Driven by a passion for innovation, this professional
+        consistently expands expertise in emerging technology stacks, ensuring
+        currency with industry trends. Seeking to leverage technical skills and
+        creativity within a forward-thinking company, the goal is to contribute
+        significantly to a dynamic development team while building a rewarding
+        long-term career in IT. An enthusiasm for video games serves not only as
+        a source of enjoyment but also sharpens problem-solving abilities and
+        fuels a creative approach to coding challenges.
       </p>
       <Links section={section} />
     </div>
