@@ -8,12 +8,18 @@ export default function Tech() {
         My choice tech stack GENERALLY (but not always):
       </p>
       <ul className="mb-4 grid grid-cols-2 gap-x-2">
-        <li className="font-light leading-7">• React</li>
-        <li className="font-light leading-7">• jQuery</li>
         <li className="font-light leading-7">• HTML</li>
         <li className="font-light leading-7">• CSS</li>
-        <li className="font-light leading-7">• Bootstrap</li>
+        <li className="font-light leading-7">• JavaScript</li>
+        <li className="font-light leading-7">• React</li>
+        <li className="font-light leading-7">• Redux</li>
+        <li className="font-light leading-7">• Redux Tool Kit</li>
+        <li className="font-light leading-7">• React Query</li>
+        <li className="font-light leading-7">• Next JS</li>
         <li className="font-light leading-7">• Tailwind</li>
+        <li className="font-light leading-7">• Axios</li>
+        <li className="font-light leading-7">• jQuery</li>
+        <li className="font-light leading-7">• Bootstrap</li>
         <li className="font-light leading-7">• Rivets JS</li>
       </ul>
       <p className="font-light leading-7 mb-2">

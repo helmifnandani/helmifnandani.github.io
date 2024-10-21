@@ -46,11 +46,11 @@ export default function Projects({ setSection }) {
           </div>
         </div>
         <p className="font-light leading-7 mb-6">
-          This project is fashioin online store catalogue that has a Web Admin
-          to update and customize the catalogue list. This project is for
-          potential customer that is interested in purchasing korean style
-          fashion. I worked on a team of 2 as the Front End Developer. I mainly
-          design and develop the UI of the online store and the Web Admin.
+          This project is fashion online store catalogue that has a Web Admin to
+          update and customize the catalogue list. This project is for potential
+          customer that is interested in purchasing korean style fashion. I
+          worked on a team of 2 as the Front End Developer. I mainly design and
+          develop the UI of the online store and the Web Admin.
         </p>
         {renderTags(["ReactJS", "Tailwind"])}
       </Card>
