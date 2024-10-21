@@ -36,6 +36,7 @@ export default function Tech() {
         <li className="font-light leading-7">• Figma</li>
         <li className="font-light leading-7">• Notion</li>
         <li className="font-light leading-7">• Azure</li>
+        <li className="font-light leading-7">• Supabase</li>
       </ul>
     </Card>
   );
