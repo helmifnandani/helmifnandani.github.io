@@ -33,6 +33,43 @@ export default function Projects({ setSection }) {
 
       <Card>
         <div className="flex lg:flex-row flex-col items-start lg:items-center justify-between mb-6">
+          <h3 className="font-bold text-2xl">Hout Cutlery</h3>
+          <div>
+            <a
+              href="https://hout-cutlery.vercel.app/"
+              target="_blank"
+              rel="noreferrer"
+              className="text-brand font-semibold hover:underline"
+            >
+              HoutCutlery
+            </a>
+          </div>
+        </div>
+        <p className="font-light leading-7 mb-6">
+          E-commerce Platform for Artisanal Wooden Cutlery. Developed a
+          full-stack e-commerce solution with a dynamic product catalog and
+          administrative dashboard. Built a responsive admin panel using React,
+          implementing real-time data management with React Query and efficient
+          form handling through React Hook Form. Engineered a high-performance
+          customer-facing storefront using Next.js, enhanced with fluid
+          animations via Framer Motion. Implemented a modern tech stack
+          including Supabase for backend services and Tailwind CSS for
+          consistent styling across both platforms. Streamlined inventory
+          management and product showcase capabilities for artisanal wooden
+          cutlery business.
+        </p>
+        {renderTags([
+          "ReactJS",
+          "React Query",
+          "NextJS",
+          "React Hook Form",
+          "Tailwind",
+          "Framer motion",
+          "Supabase",
+        ])}
+      </Card>
+      <Card>
+        <div className="flex lg:flex-row flex-col items-start lg:items-center justify-between mb-6">
           <h3 className="font-bold text-2xl">Thekoreandaily</h3>
           <div>
             <a
