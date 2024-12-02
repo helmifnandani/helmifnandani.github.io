@@ -61,7 +61,7 @@ export default function Work({ setSection }) {
       </Card>
 
       <Card>
-        <h3 className="font-bold text-2xl">Lead Developer</h3>
+        <h3 className="font-bold text-2xl">Lead Software Developer</h3>
 
         <p className="font-light text-white/80">
           PT Biz Infosistem • Full-Time • May 2017 — Dec 2018
