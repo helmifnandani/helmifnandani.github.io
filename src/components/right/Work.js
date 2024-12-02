@@ -48,7 +48,7 @@ export default function Work({ setSection }) {
       </Card>
 
       <Card>
-        <h3 className="font-bold text-2xl">IT Specialist</h3>
+        <h3 className="font-bold text-2xl">Software Engineer</h3>
         <p className="font-light text-white/80">
           PT Sahabat Safari Semesta • Full-Time • Jan 2019 — Jul 2020
         </p>
