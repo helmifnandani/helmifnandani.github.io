@@ -71,7 +71,7 @@ export default function Work({ setSection }) {
         <p className="font-light leading-7">
           Develop ERP System that is tailored based on the client business
           model. Assisted and give support to client with about software issues
-          and concerncs.
+          and concerns.
         </p>
       </Card>
     </section>
