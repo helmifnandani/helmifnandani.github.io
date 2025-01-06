@@ -11,6 +11,7 @@ export default function Tech() {
         <li className="font-light leading-7">• HTML</li>
         <li className="font-light leading-7">• CSS</li>
         <li className="font-light leading-7">• JavaScript</li>
+        <li className="font-light leading-7">• TypeScript</li>
         <li className="font-light leading-7">• React</li>
         <li className="font-light leading-7">• Redux</li>
         <li className="font-light leading-7">• Redux Tool Kit</li>
