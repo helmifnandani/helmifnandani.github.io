@@ -17,7 +17,7 @@ export default function Work({ setSection }) {
         <h3 className="font-bold text-2xl">AI Product Specialist</h3>
         <p className="font-light text-white/80">
           <a
-            href="https://www.leverategroup.com/"
+            href="https://leverategroup.asia/"
             target="_blank"
             rel="noreferrer"
             className="font-bold text-brand hover:underline"
@@ -28,25 +28,36 @@ export default function Work({ setSection }) {
         </p>
         <p className="font-light mb-4 text-white/80">Jakarta</p>
         <p className="font-light leading-7 mb-4">
-          Explore, research, and implement AI solutions to enhance business operations and client projects. Design and develop AI-powered tools, workflows, and prototypes that integrate with existing systems and deliver scalable solutions.
+          Explore, research, and implement AI solutions to enhance business
+          operations and client projects. Design and develop AI-powered tools,
+          workflows, and prototypes that integrate with existing systems and
+          deliver scalable solutions.
         </p>
         <p className="font-light leading-7 mb-2">
           Key responsibilities and achievements:
         </p>
         <p className="ms-4 font-light leading-7 mb-4">
-          - Lead the development of Leverate's internal enterprise AI platform, integrating APIs (e.g., OpenAI) to deliver scalable AI solutions without building proprietary models.
+          - Lead the development of Leverate's internal enterprise AI platform,
+          integrating APIs (e.g., OpenAI) to deliver scalable AI solutions
+          without building proprietary models.
         </p>
         <p className="ms-4 font-light leading-7 mb-4">
-          - Collaborate with cross-functional teams to translate business requirements into AI-driven solutions, ensuring alignment with strategic goals.
+          - Collaborate with cross-functional teams to translate business
+          requirements into AI-driven solutions, ensuring alignment with
+          strategic goals.
         </p>
         <p className="ms-4 font-light leading-7 mb-4">
-          - Conduct AI adoption workshops and training sessions for clients and internal teams to accelerate practical understanding and usage of AI.
+          - Conduct AI adoption workshops and training sessions for clients and
+          internal teams to accelerate practical understanding and usage of AI.
         </p>
         <p className="ms-4 font-light leading-7 mb-4">
-          - Leverage a front-end development background to shape intuitive, user-friendly interfaces for AI solutions.
+          - Leverage a front-end development background to shape intuitive,
+          user-friendly interfaces for AI solutions.
         </p>
         <p className="ms-4 font-light leading-7">
-          - Act as a liaison between technical experts and business stakeholders, simplifying complex AI concepts into actionable strategies.
+          - Act as a liaison between technical experts and business
+          stakeholders, simplifying complex AI concepts into actionable
+          strategies.
         </p>
       </Card>
 
