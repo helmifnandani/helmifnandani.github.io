@@ -22,6 +22,7 @@ export default function Tech() {
         <li className="font-light leading-7">• jQuery</li>
         <li className="font-light leading-7">• Bootstrap</li>
         <li className="font-light leading-7">• Rivets JS</li>
+        <li className="font-light leading-7">• Python</li>
       </ul>
       <p className="font-light leading-7 mb-2">
         Some other tech that have used before:

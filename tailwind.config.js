@@ -12,6 +12,9 @@ module.exports = {
         brand: "#524fe3",
         moon: "#F7F7FF",
       },
+      fontFamily: {
+        sans: ["var(--font-space-mono)", "monospace"],
+      },
     },
   },
   plugins: [],
