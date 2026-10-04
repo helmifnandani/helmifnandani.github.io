@@ -175,6 +175,53 @@ export default function Projects({ setSection }) {
 
       <Card>
         <div className="flex lg:flex-row flex-col items-start lg:items-center justify-between mb-1">
+          <h3 className="font-bold text-2xl">ABC Godlike</h3>
+          <a
+            href="https://abcgodlike.com/"
+            target="_blank"
+            rel="noreferrer"
+            className="text-brand font-semibold hover:underline"
+          >
+            abcgodlike.com
+          </a>
+        </div>
+        <p className="font-light text-white/60 text-sm mb-4">Live</p>
+        <p className="font-light leading-7 mb-3">
+          Renting out crypto trading bots means answering one question before
+          any other: is this a scam? The client&apos;s self-built site looked
+          templated and answered nothing. I rebuilt it as a terminal-style
+          landing page that shows the bot working, uses only real trade data,
+          and sends every visitor to one action: a WhatsApp chat.
+        </p>
+        <ul className="font-light leading-7 mb-3 list-disc mx-6">
+          <li>
+            The hero replays real closed positions from the client&apos;s
+            Binance export, labeled with the actual date range and exchange,
+            never a simulated feed
+          </li>
+          <li>
+            The build parses that export and fails on any malformed row, or
+            when the trades don&apos;t reconcile with the exchange&apos;s own
+            totals, so a wrong number can&apos;t ship
+          </li>
+          <li>
+            A safety walkthrough shows how members create a trade-only API
+            key with withdrawals off, so the bot can never move their funds
+          </li>
+          <li>
+            English and Indonesian from one typed copy source; a missing
+            translation fails the build
+          </li>
+          <li>
+            Fully static, with written runbooks so the client updates prices,
+            batches, proof screenshots, and the trade log without me
+          </li>
+        </ul>
+        {renderTags(["Next.js 16", "TypeScript", "Tailwind", "Static Export"])}
+      </Card>
+
+      <Card>
+        <div className="flex lg:flex-row flex-col items-start lg:items-center justify-between mb-1">
           <h3 className="font-bold text-2xl">Fracture</h3>
           <a
             href="https://fracture-arc.pages.dev/"
