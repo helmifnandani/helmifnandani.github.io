@@ -177,8 +177,8 @@ export default function Projects({ setSection }) {
         </p>
         <p className="font-light leading-7 mb-3">
           Sales reps only get better by practicing, and practicing needs a
-          trainer in the room, which doesn&apos;t scale across a global
-          salesforce. So I built an AI interviewer that plays the buyer
+          trainer in the room, which doesn&apos;t scale across a whole sales
+          team. So I built an AI interviewer that plays the buyer
           instead: available any time, in any market, scoring every session
           automatically.
         </p>
@@ -234,6 +234,10 @@ export default function Projects({ setSection }) {
           workflows that do it instead.
         </p>
         <ul className="font-light leading-7 mb-3 list-disc mx-6">
+          <li>
+            Cut attendance admin from 1 to 2 hours a day to 1 to 2 hours a
+            week, about 80% less, for 100+ employees
+          </li>
           <li>
             Handles attendance for the People team and payslip generation
             for Finance

@@ -28,11 +28,9 @@ export default function Work({ setSection }) {
         </p>
         <p className="font-light mb-4 text-white/80">Jakarta</p>
         <p className="font-light leading-7 mb-4">
-          Hired as the first and only AI person at a 100+ employee agency
-          with no AI department. Built the function from scratch: the
-          roadmap, the products, the team, and the internal case for why any
-          of it mattered. Now lead a four-person AI team reporting directly
-          to the COO.
+          Joined a 100+ employee agency with no AI department. Part of a
+          three-person AI team; helped build the AI function from zero as
+          the first AI hire.
         </p>
         <p className="font-light leading-7 mb-2">What I have shipped here:</p>
         <ul className="ms-4 font-light leading-7 list-disc">
@@ -43,7 +41,8 @@ export default function Work({ setSection }) {
             infrastructure I provisioned and maintain.
           </li>
           <li className="mb-2">
-            Built an agentic voice sales trainer for a global FMCG client.
+            Built an agentic voice sales trainer for a European brand&apos;s
+            internal sales team.
             Sales reps practice against an AI interviewer that scores them
             automatically, replacing a process that used to need a human
             trainer in the room.
@@ -51,12 +50,13 @@ export default function Work({ setSection }) {
           <li className="mb-2">
             Automated back-office operations company-wide. n8n workflows now
             handle attendance and payroll administration for the People and
-            Finance teams across 100+ employees.
+            Finance teams. Cut attendance admin from 1 to 2 hours a day to 1
+            to 2 hours a week, about 80% less, for 100+ employees.
           </li>
           <li className="mb-2">
-            Built and delivered paid AI workshops and client adoption
-            programs, including a 2026 curriculum developed with an
-            executive education partner.
+            Built and delivered 7 to 8 paid AI workshops and client adoption
+            programs since 2025, including a 2026 curriculum developed with
+            an executive education partner.
           </li>
           <li>
             Act as the translation layer between engineers and executives,
