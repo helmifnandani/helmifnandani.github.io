@@ -84,7 +84,7 @@ export default function Hero({ section }) {
         automations that quietly run a company&apos;s back office.
       </p>
       <p className="font-light leading-7 mb-4">
-        Nearly a decade of front-end engineering sits underneath all of it,
+        Nearly a decade in software sits underneath all of it,
         which is why the AI I ship doesn&apos;t look like a rushed demo.
       </p>
       <p className="font-light leading-7">
