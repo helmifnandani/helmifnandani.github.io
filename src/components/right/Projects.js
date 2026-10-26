@@ -175,6 +175,71 @@ export default function Projects({ setSection }) {
 
       <Card>
         <div className="flex lg:flex-row flex-col items-start lg:items-center justify-between mb-1">
+          <h3 className="font-bold text-2xl">Seharian</h3>
+          <div className="flex gap-4">
+            <a
+              href="https://seharian.app/"
+              target="_blank"
+              rel="noreferrer"
+              className="text-brand font-semibold hover:underline"
+            >
+              seharian.app
+            </a>
+            <a
+              href="https://play.google.com/store/apps/details?id=app.seharian"
+              target="_blank"
+              rel="noreferrer"
+              className="text-brand font-semibold hover:underline"
+            >
+              Google Play
+            </a>
+          </div>
+        </div>
+        <p className="font-light text-white/60 text-sm mb-4">
+          Live on Google Play
+        </p>
+        <p className="font-light leading-7 mb-3">
+          Good stories come from ordinary days, but only while they&apos;re
+          fresh. I built a quiet diary for storytellers and anyone who keeps
+          a journal: it opens straight to today&apos;s page, one plain-text
+          note per date, saved as you type. A few lines a day keep the
+          details you would otherwise forget, and make them easy to find
+          again.
+        </p>
+        <ul className="font-light leading-7 mb-3 list-disc mx-6">
+          <li>
+            The Android app has no internet access, so notes can&apos;t leave
+            the phone. No account, no ads, no tracking
+          </li>
+          <li>
+            Optional PIN and fingerprint lock, and diary text stays out of
+            the recent-apps preview
+          </li>
+          <li>
+            A home-screen widget opens today&apos;s page without launching the
+            app
+          </li>
+          <li>
+            Search across every note, pin the stories worth keeping, and
+            browse a month calendar that shows which days have entries
+          </li>
+          <li>
+            English and Bahasa Indonesia, light and dark, and an installable
+            web version
+          </li>
+        </ul>
+        {renderTags([
+          "Kotlin",
+          "Jetpack Compose",
+          "Room",
+          "React",
+          "Vite",
+          "PWA",
+        ])}
+      </Card>
+
+      <Card>
+        <div className="flex lg:flex-row flex-col items-start lg:items-center justify-between mb-1">
           <h3 className="font-bold text-2xl">ABC Godlike</h3>
           <a
             href="https://abcgodlike.com/"
