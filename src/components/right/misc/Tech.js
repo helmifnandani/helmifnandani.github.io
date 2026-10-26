@@ -9,7 +9,11 @@ const TECH_GROUPS = [
   {
     group: "Front End",
     items:
-      "TypeScript, JavaScript, React, Next.js, Tailwind, React Query, Redux Toolkit, Framer Motion, HTML, CSS",
+      "TypeScript, JavaScript, React, Next.js, Vite, PWA, Tailwind, React Query, Redux Toolkit, Framer Motion, HTML, CSS",
+  },
+  {
+    group: "Mobile",
+    items: "Kotlin, Jetpack Compose, Room",
   },
   {
     group: "Back End & Data",

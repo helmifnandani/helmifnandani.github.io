@@ -1,10 +1,92 @@
 import { useEffect } from "react";
 import { useInView } from "react-intersection-observer";
+import { motion, useReducedMotion } from "framer-motion";
 import Card from "../utilities/Card";
+import { EASE_OUT } from "../../lib/motion";
 import { useState } from "react";
+
+const ARCHIVE = [
+  {
+    name: "Fracture",
+    url: "https://fracture-arc.pages.dev/",
+    linkLabel: "fracture-arc.pages.dev",
+    summary:
+      "I broke my foot in March 2026 and got asked the same seven questions every day, so I built a deadpan bilingual FAQ, X-ray viewer included, and now I send the link.",
+    tags: ["Next.js", "Tailwind", "Cloudflare Pages"],
+  },
+  {
+    name: "ANUGERAH",
+    url: "https://komikasetengahpendeta.pages.dev/",
+    linkLabel: "komikasetengahpendeta.pages.dev",
+    summary:
+      "A single-page event site, shipped fast, for a stand-up comedy special staged in Cibitung in July 2026.",
+    tags: ["Next.js", "Tailwind", "Cloudflare Pages"],
+  },
+  {
+    name: "Hout Cutlery",
+    url: "https://hout-cutlery.vercel.app/",
+    linkLabel: "hout-cutlery.vercel.app",
+    summary:
+      "A storefront and a real-time inventory dashboard for a small maker, kept in sync through one Supabase database.",
+    tags: [
+      "React",
+      "Next.js",
+      "React Query",
+      "Tailwind",
+      "Framer Motion",
+      "Supabase",
+    ],
+  },
+  {
+    name: "Christin Wu",
+    url: "https://christinwu.com/",
+    linkLabel: "christinwu.com",
+    summary:
+      "Contributed to the storefront for an Indonesian designer footwear label: seasonal collections, designer collaborations, and a bridal line.",
+    tags: [".NET", "C#", "Liquid", "JavaScript", "HTML", "CSS"],
+  },
+  {
+    name: "JJ Royal Coffee",
+    url: "https://jjroyalcoffee.com/",
+    linkLabel: "jjroyalcoffee.com",
+    summary:
+      "Contributed to a specialty coffee storefront running three languages, three currencies, and multiple regional shipping carriers.",
+    tags: [".NET", "C#", "Liquid", "JavaScript", "HTML", "CSS"],
+  },
+  {
+    name: "Livin' by Mandiri",
+    summary:
+      "Contributed to a commerce integration built inside one of Indonesia's largest banking apps.",
+  },
+  {
+    name: "Thekoreandaily",
+    url: "https://thekoreandaily.co.id/",
+    linkLabel: "thekoreandaily.co.id",
+    summary:
+      "A Korean-fashion catalogue for a two-person team: the customer-facing storefront and a web admin panel to keep it current.",
+    tags: ["React", "Tailwind"],
+  },
+  {
+    name: "The Wild Oasis",
+    url: "https://the-wild-oasis-website-hfn.vercel.app/",
+    linkLabel: "the-wild-oasis-website-hfn.vercel.app",
+    summary:
+      "An Airbnb-style booking platform with search and filters, a real-time availability calendar, guest accounts, and an admin dashboard for hosts.",
+    tags: ["React", "Next.js", "Tailwind", "React Query", "Context API"],
+  },
+  {
+    name: "Forkify",
+    url: "https://forkify-ndn.netlify.app/",
+    linkLabel: "forkify-ndn.netlify.app",
+    summary:
+      "A recipe finder that rescales the ingredients to the number of portions you want to cook.",
+    tags: ["React"],
+  },
+];
 
 export default function Projects({ setSection }) {
   const [ref, inView] = useInView({});
+  const shouldReduceMotion = useReducedMotion();
 
   useEffect(() => {
     inView && setSection("projects");
@@ -29,11 +111,7 @@ export default function Projects({ setSection }) {
 
   return (
     <section ref={ref} className="mb-16" id="projects">
-      <h2 className="font-bold text-3xl mb-2">Projects</h2>
-      <p className="font-light leading-7 mb-6">
-        AI systems first, then the web work. One or two engagements stay
-        unnamed by client request; everything else is named directly.
-      </p>
+      <h2 className="font-bold text-3xl mb-6">Projects</h2>
 
       <Card>
         <div className="flex lg:flex-row flex-col items-start lg:items-center justify-between mb-1">
@@ -175,6 +253,71 @@ export default function Projects({ setSection }) {
 
       <Card>
         <div className="flex lg:flex-row flex-col items-start lg:items-center justify-between mb-1">
+          <h3 className="font-bold text-2xl">Seharian</h3>
+          <div className="flex gap-4">
+            <a
+              href="https://seharian.app/"
+              target="_blank"
+              rel="noreferrer"
+              className="text-brand font-semibold hover:underline"
+            >
+              seharian.app
+            </a>
+            <a
+              href="https://play.google.com/store/apps/details?id=app.seharian"
+              target="_blank"
+              rel="noreferrer"
+              className="text-brand font-semibold hover:underline"
+            >
+              Google Play
+            </a>
+          </div>
+        </div>
+        <p className="font-light text-white/60 text-sm mb-4">
+          Live on Google Play
+        </p>
+        <p className="font-light leading-7 mb-3">
+          Good stories come from ordinary days, but only while they&apos;re
+          fresh. I built a quiet diary for storytellers and anyone who keeps
+          a journal: it opens straight to today&apos;s page, one plain-text
+          note per date, saved as you type. A few lines a day keep the
+          details you would otherwise forget, and make them easy to find
+          again.
+        </p>
+        <ul className="font-light leading-7 mb-3 list-disc mx-6">
+          <li>
+            The Android app has no internet access, so notes can&apos;t leave
+            the phone. No account, no ads, no tracking
+          </li>
+          <li>
+            Optional PIN and fingerprint lock, and diary text stays out of
+            the recent-apps preview
+          </li>
+          <li>
+            A home-screen widget opens today&apos;s page without launching the
+            app
+          </li>
+          <li>
+            Search across every note, pin the stories worth keeping, and
+            browse a month calendar that shows which days have entries
+          </li>
+          <li>
+            English and Bahasa Indonesia, light and dark, and an installable
+            web version
+          </li>
+        </ul>
+        {renderTags([
+          "Kotlin",
+          "Jetpack Compose",
+          "Room",
+          "React",
+          "Vite",
+          "PWA",
+        ])}
+      </Card>
+
+      <Card>
+        <div className="flex lg:flex-row flex-col items-start lg:items-center justify-between mb-1">
           <h3 className="font-bold text-2xl">ABC Godlike</h3>
           <a
             href="https://abcgodlike.com/"
@@ -221,237 +364,50 @@ export default function Projects({ setSection }) {
       </Card>
 
       <Card>
-        <div className="flex lg:flex-row flex-col items-start lg:items-center justify-between mb-1">
-          <h3 className="font-bold text-2xl">Fracture</h3>
-          <a
-            href="https://fracture-arc.pages.dev/"
-            target="_blank"
-            rel="noreferrer"
-            className="text-brand font-semibold hover:underline"
-          >
-            fracture-arc.pages.dev
-          </a>
-        </div>
-        <p className="font-light text-white/60 text-sm mb-4">Live</p>
-        <p className="font-light leading-7">
-          I broke my foot on 17 March 2026: gravity, stairs, a metal pin in
-          the metatarsal. Then I answered the same seven questions about it,
-          every day, for weeks. So I built a site, and now I send the link.
-          A bilingual FAQ covering the incident timeline, the surgery, the
-          recovery estimate, and an optional X-ray viewer for people who ask
-          and then regret asking. Deadpan throughout, structured like a
-          medical dashboard, built during recovery with one working leg.
-        </p>
-        <div className="mt-3">
-          {renderTags(["Next.js", "Tailwind", "Cloudflare Pages"])}
-        </div>
-      </Card>
-
-      <Card>
-        <div className="flex lg:flex-row flex-col items-start lg:items-center justify-between mb-1">
-          <h3 className="font-bold text-2xl">ANUGERAH</h3>
-          <a
-            href="https://komikasetengahpendeta.pages.dev/"
-            target="_blank"
-            rel="noreferrer"
-            className="text-brand font-semibold hover:underline"
-          >
-            komikasetengahpendeta.pages.dev
-          </a>
-        </div>
-        <p className="font-light text-white/60 text-sm mb-4">Live</p>
-        <p className="font-light leading-7">
-          A live comedy special needs somewhere to send an audience before
-          tickets exist, so I shipped a single-page event site fast on
-          Cloudflare Pages. Promotional site for ANUGERAH, a stand-up
-          special staged in Cibitung in July 2026.
-        </p>
-        <div className="mt-3">
-          {renderTags(["Next.js", "Tailwind", "Cloudflare Pages"])}
-        </div>
-      </Card>
-
-      <Card>
-        <div className="flex lg:flex-row flex-col items-start lg:items-center justify-between mb-1">
-          <h3 className="font-bold text-2xl">Hout Cutlery</h3>
-          <a
-            href="https://hout-cutlery.vercel.app/"
-            target="_blank"
-            rel="noreferrer"
-            className="text-brand font-semibold hover:underline"
-          >
-            hout-cutlery.vercel.app
-          </a>
-        </div>
-        <p className="font-light text-white/60 text-sm mb-4">Live</p>
-        <p className="font-light leading-7 mb-3">
-          Small makers usually end up with a storefront or an inventory
-          system, rarely both, and almost never in sync. I built both,
-          sharing one source of truth: a Next.js storefront with a dynamic
-          catalogue and Framer Motion transitions, paired with a React
-          admin dashboard for real-time inventory, kept in sync through
-          Supabase.
-        </p>
-        {renderTags([
-          "React",
-          "Next.js",
-          "React Query",
-          "Tailwind",
-          "Framer Motion",
-          "Supabase",
-        ])}
-      </Card>
-
-      <Card>
-        <div className="flex lg:flex-row flex-col items-start lg:items-center justify-between mb-1">
-          <h3 className="font-bold text-2xl">Christin Wu</h3>
-          <a
-            href="https://christinwu.com/"
-            target="_blank"
-            rel="noreferrer"
-            className="text-brand font-semibold hover:underline"
-          >
-            christinwu.com
-          </a>
-        </div>
-        <p className="font-light text-white/60 text-sm mb-4">Live</p>
-        <p className="font-light leading-7 mb-3">
-          Contributed to the storefront for an Indonesian designer footwear
-          label, spanning seasonal collections, designer collaborations, and
-          a bridal line.
-        </p>
-        {renderTags([".NET", "C#", "Liquid", "JavaScript", "HTML", "CSS"])}
-      </Card>
-
-      <Card>
-        <div className="flex lg:flex-row flex-col items-start lg:items-center justify-between mb-1">
-          <h3 className="font-bold text-2xl">JJ Royal Coffee</h3>
-          <a
-            href="https://jjroyalcoffee.com/"
-            target="_blank"
-            rel="noreferrer"
-            className="text-brand font-semibold hover:underline"
-          >
-            jjroyalcoffee.com
-          </a>
-        </div>
-        <p className="font-light text-white/60 text-sm mb-4">Live</p>
-        <p className="font-light leading-7 mb-3">
-          Contributed to a specialty coffee storefront running three
-          languages, three currencies, and multiple regional shipping
-          carriers.
-        </p>
-        {renderTags([".NET", "C#", "Liquid", "JavaScript", "HTML", "CSS"])}
-      </Card>
-
-      <Card>
-        <h3 className="font-bold text-xl mb-2">
-          Contributed to Livin&apos; by Mandiri
-        </h3>
-        <p className="font-light leading-7">
-          A commerce integration built inside one of Indonesia&apos;s
-          largest banking apps.
-        </p>
-      </Card>
-
-      <Card>
-        <div className="flex lg:flex-row flex-col items-start lg:items-center justify-between mb-1">
-          <h3 className="font-bold text-2xl">Thekoreandaily</h3>
-          <a
-            href="https://thekoreandaily.co.id/"
-            target="_blank"
-            rel="noreferrer"
-            className="text-brand font-semibold hover:underline"
-          >
-            thekoreandaily.co.id
-          </a>
-        </div>
-        <p className="font-light leading-7 mb-3">
-          A Korean-fashion e-commerce catalogue for a two-person team. I
-          built the customer-facing storefront and a web admin panel to
-          keep the catalogue current.
-        </p>
-        {renderTags(["React", "Tailwind"])}
-      </Card>
-
-      <Card>
-        <div className="flex lg:flex-row flex-col items-start lg:items-center justify-between mb-6">
-          <h3 className="font-bold text-2xl">The Wild Oasis</h3>
-          <div>
-            <a
-              href="https://the-wild-oasis-website-hfn.vercel.app/"
-              target="_blank"
-              rel="noreferrer"
-              className="text-brand font-semibold hover:underline"
+        <h3 className="font-bold text-2xl mb-2">More projects</h3>
+        <ul>
+          {ARCHIVE.map(({ name, url, linkLabel, summary, tags }, i) => (
+            <motion.li
+              key={name}
+              custom={i}
+              variants={{
+                hidden: shouldReduceMotion
+                  ? { opacity: 0 }
+                  : { opacity: 0, y: 8 },
+                visible: (i) => ({
+                  opacity: 1,
+                  y: 0,
+                  transition: {
+                    duration: 0.25,
+                    ease: EASE_OUT,
+                    delay: 0.1 + i * 0.04,
+                  },
+                }),
+              }}
+              className="py-4 border-b border-white/10 last:border-b-0 last:pb-0"
             >
-              The Wild Oasis
-            </a>
-          </div>
-        </div>
-        <p className="font-light leading-7 mb-3">
-          Built a full-featured accommodation booking platform inspired by
-          Airbnb:
-        </p>
-        <ul className="font-light leading-7 mb-6 list-disc mx-6">
-          <li>
-            Engineered responsive Next.js frontend with dynamic search,
-            filtering, and booking capabilities
-          </li>
-          <li>
-            Developed interactive property listings with image galleries and map
-            integration
-          </li>
-          <li>
-            Created secure user authentication system with booking management
-            dashboard
-          </li>
-          <li>
-            Implemented real-time availability calendar and reservation system
-          </li>
-          <li>
-            Built admin dashboard for property management and booking oversight
-          </li>
-          <li>
-            Optimized performance with server-side rendering and image
-            optimization
-          </li>
+              <div className="flex lg:flex-row flex-col items-start lg:items-baseline justify-between lg:gap-4 mb-1">
+                <h4 className="font-bold text-lg">{name}</h4>
+                {url && (
+                  <a
+                    href={url}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="text-brand font-semibold text-sm hover:underline break-all"
+                  >
+                    {linkLabel}
+                  </a>
+                )}
+              </div>
+              <p className="font-light leading-7">{summary}</p>
+              {tags && (
+                <p className="font-light text-white/60 text-sm mt-1">
+                  {tags.join(" · ")}
+                </p>
+              )}
+            </motion.li>
+          ))}
         </ul>
-        <p className="font-semibold leading-7 mb-3">Key Features:</p>
-        <ul className="font-light leading-7 mb-6 list-disc mx-6">
-          <li>Property listing management for hosts</li>
-          <li>Booking system with availability tracking</li>
-          <li>User profiles and booking history</li>
-          <li>Advanced search with multiple filter options</li>
-        </ul>
-        {renderTags([
-          "ReactJS",
-          "Next.Js",
-          "Tailwind",
-          "React Query",
-          "Context API",
-        ])}
-      </Card>
-
-      <Card>
-        <div className="flex lg:flex-row flex-col items-start lg:items-center justify-between mb-6">
-          <h3 className="font-bold text-2xl">Forkify</h3>
-          <div>
-            <a
-              href="https://forkify-ndn.netlify.app/"
-              target="_blank"
-              rel="noreferrer"
-              className="text-brand font-semibold hover:underline"
-            >
-              Forkify
-            </a>
-          </div>
-        </div>
-        <p className="font-light leading-7 mb-6">
-          This project is a recipe finder website build with ReactJS. It helps
-          people who like to try recipe. Complete with adjustment of the
-          ingredients according to the portion that user want to cook.
-        </p>
-        {renderTags(["ReactJS"])}
       </Card>
     </section>
   );
